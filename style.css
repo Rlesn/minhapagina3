@@ -5,24 +5,19 @@
     --cor3: #008F8C;
     --cor4: #015958;
     --cor5: #023535;
+}
     
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     border: 2px inset black;
-
     background: linear-gradient(90deg,  #008F8C,#C7FFED );
-    background-attachment: fixed;
-    
- 
+    background-attachment: fixed
 }
 h1 {
-   
     color: lightcyan;
     margin:0;
     padding: 10px 0px;
- 
-
 }
 
 
@@ -35,10 +30,6 @@ header{
     text-align: center;
     border-bottom: ridge black;
     z-index: 100;
-    
-
-
- 
 }
 
 nav{
@@ -58,11 +49,7 @@ display:flex ;
  gap: 30px;
  padding: 20px;
  margin: 0;
-align-items: center;
-
-  
- 
-  
+align-items: center; 
 }
 nav li{
 
@@ -92,36 +79,11 @@ main{
     gap: 30px;
     
 }
-.sobre{
-     background-color: rgba(255, 255, 255, 0.9); /* ✅ cor diferente do fundo */
-    border: 2px solid #036969;
-    border-radius: 20px; /* ✅ cantos arredondados */
-    padding: 20px;
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-    .social-icons{
- margin: 5px;
-  display: flex; justify-content: space-evenly ;
- 
- 
- 
-  
-}
-.social-icons img{
-width: 15px;
-height: 15px;    
-
-}
-
 .icon:hover{
     transform: translateY(-5px);
 }
 h2{
     text-align: center;
-}
-    
-
 }
 .sobre{
     background-color: rgba(255, 255, 255, 0.9); /* ✅ cor diferente do fundo */
@@ -135,27 +97,22 @@ h2{
     transform: translateY(-10px);
     box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
 }
-.social-icons{
- margin: 5px;
-  display: flex; justify-content: space-evenly ;
- 
- 
- 
-  
+
+.social-icon{
+   display: flex; justify-content: center ;
+   padding: 10px;
 }
-.social-icons img{
+.social-icon img{
 width: 15px;
-height: 15px;    
-
-}
-
-.icon:hover{
-    transform: translateY(-5px);
+height: 15px;  
 }
 .perfil{
     display: flex; justify-content: center;
     align-items:center;
    
+}
+.icon:hover{
+    transform: translateY(-5px);
 }
 .foto{
     border-radius: 50%;
