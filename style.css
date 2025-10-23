@@ -118,6 +118,23 @@ h2{
     transform: translateY(-10px);
     box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
 }
+.social-icons{
+ margin: 5px;
+  display: flex; justify-content: space-evenly ;
+ 
+ 
+ 
+  
+}
+.social-icons img{
+width: 15px;
+height: 15px;    
+
+}
+
+.icon:hover{
+    transform: translateY(-5px);
+}
 .perfil{
     display: flex; justify-content: center;
     align-items:center;
