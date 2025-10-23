@@ -1,42 +1,211 @@
 @charset "UTF-8";
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
-}
-header{
-    background-color: lightblue;
-    height: 70px;
-    position: sticky;
+:root{
+    --cor1: #C7FFED;
+    --cor2: #D8FFDB;
+    --cor3: #008F8C;
+    --cor4: #015958;
+    --cor5: #023535;
     
-    top:0;
-    margin: 0;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    border: 2px inset black;
+
+    background: linear-gradient(90deg,  #008F8C,#C7FFED );
+    background-attachment: fixed;
+    
+ 
+}
+h1 {
+   
+    color: lightcyan;
+    margin:0;
+    padding: 10px 0px;
+ 
 
 }
-h1{
+
+
+header{
+    background-color: var(--cor4);
+    position: sticky;
+    top:0;
+    height: auto;
+    padding: 10px 0;
     text-align: center;
-    color: rgba(47, 0, 255, 0.582);
-    margin: 0;
-    padding: 15px 0px;
+    border-bottom: ridge black;
+    z-index: 100;
+    
+
+
+ 
 }
-nav > ul{
-    list-style-type: none;
-    display: flex; justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-    padding: 2px;
-    margin: 2px;
+
+nav{
+
+    background-color:#92eeee;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+   
+    top: 70px;
+    z-index: 99;
 }
-img{
-    width: 300px;
-    height: 300px;
+
+nav ul{
+list-style-type: none;
+display:flex ;
+ justify-content: center;
+ gap: 30px;
+ padding: 20px;
+ margin: 0;
+align-items: center;
+
+  
+ 
+  
 }
 nav li{
-    flex: 1px;
+
+    padding:0px;
+ }
+
+ nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   padding: 8px 12px;
+   border-radius: 10px;
+   transition: all 0.3s ease;
+ }
+
+ nav a:hover {
+    background-color: #023535;
+    color: white;
+    transform: scale(1.1);
+}
+
+main{
+    max-width: 900px;
+    margin: 120px auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.sobre{
+     background-color: rgba(255, 255, 255, 0.9); /* ✅ cor diferente do fundo */
+    border: 2px solid #036969;
+    border-radius: 20px; /* ✅ cantos arredondados */
+    padding: 20px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+h2{
     text-align: center;
 }
-nav li:first-child{
-    text-align: left;
+    
+
 }
-nav li:last-child{
-    text-align: right;
+.sobre{
+    background-color: rgba(255, 255, 255, 0.9); /* ✅ cor diferente do fundo */
+    border: 2px solid #036969;
+    border-radius: 20px; /* ✅ cantos arredondados */
+    padding: 20px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+.sobre:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+}
+.perfil{
+    display: flex; justify-content: center;
+    align-items:center;
+   
+}
+.foto{
+    border-radius: 50%;
+}
+
+   
+    
+
+
+
+
+.livro {
+    background-color: rgba(255, 255, 255, 0.9); /* ✅ cor diferente do fundo */
+    border: 2px solid #036969;
+    border-radius: 20px; /* ✅ cantos arredondados */
+    padding: 20px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.livro:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+}
+.filme {
+    background-color: rgba(255, 255, 255, 0.9); /* ✅ cor diferente do fundo */
+    border: 2px solid #036969;
+    border-radius: 20px; /* ✅ cantos arredondados */
+    padding: 20px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.filme:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+}
+iframe{
+  float: left;
+  width: 400px;
+transition: transform 0.9s ease;
+margin-right: 20px;
+
+  
+}
+ifrma:hover {
+    transform: scale(1.05);
+}
+
+img {
+float: left;
+
+margin-right: 20px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color:#92eeee;
+    color: black;
+    padding: 15px;
+    border-top: 2px solid black;
+}
+.paragrafo{
+
+text-align: justify;
+line-height: 1.5;
+
+}
+
+.social-links a {
+    text-decoration: none;
+    color: rgb(114, 139, 216);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: fuchsia;
+}
+
+
+
+
