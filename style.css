@@ -33,11 +33,10 @@ header{
 }
 
 nav{
-position: sticky;
     background-color:#92eeee;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-   
+   position: sticky;
     top: 70px;
     z-index: 99;
 }
