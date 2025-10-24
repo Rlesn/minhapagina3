@@ -43,10 +43,10 @@ nav{
 }
 
 nav ul{
-position: sticky;
 list-style-type: none;
 display:flex ;
  justify-content: center;
+position: sticky;
  gap: 30px;
  padding: 20px;
  margin: 0;
